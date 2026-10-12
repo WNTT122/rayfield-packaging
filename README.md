@@ -1,50 +1,23 @@
-<h1 align="center">Jellyfin Packaging</h1>
-<h3 align="center">Part of Jellyfin: The Free Software Media System</h3>
+# Rayfield Packaging
+
+**Build and package Rayfield for supported deployment targets.**
+
+This repository contains packaging and build automation for Rayfield. It brings together scripts and configuration used to produce distributable artifacts, with Docker-based builds helping keep build environments consistent and repeatable.
+
+## What you'll find here
+
+- **Package build scripts** for supported operating systems and distribution formats.
+- **Docker-based build environments** to reduce host dependency differences.
+- **Release automation support** for repeatable builds across supported targets.
+- **Configuration-driven builds** whose available platforms and architectures are defined by this repository's build configuration.
+
+Supported outputs and build requirements depend on the current scripts and configuration. Use the quickstart and design sections below as the source of truth before starting a build.
+
+## Relationship to upstream
+
+Rayfield is an independent project derived from Jellyfin. This repository's history and packaging structure may retain upstream conventions; consult the included license and attribution notices for applicable terms.
 
 ---
-
-<p align="center">
-<img alt="Logo Banner" src="https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/banner-logo-solid.svg?sanitize=true"/>
-<br/>
-<br/>
-<a href="https://github.com/jellyfin/jellyfin-packaging">
-<img alt="GPL 3.0 License" src="https://img.shields.io/github/license/jellyfin/jellyfin-packaging.svg"/>
-</a>
-<a href="https://github.com/jellyfin/jellyfin/releases">
-<img alt="Current Release" src="https://img.shields.io/github/release/jellyfin/jellyfin.svg"/>
-</a>
-<a href="https://translate.jellyfin.org/projects/jellyfin/jellyfin-core/?utm_source=widget">
-<img alt="Translation Status" src="https://translate.jellyfin.org/widgets/jellyfin/-/jellyfin-core/svg-badge.svg"/>
-</a>
-<a href="https://hub.docker.com/r/jellyfin/jellyfin">
-<img alt="Docker Pull Count" src="https://img.shields.io/docker/pulls/jellyfin/jellyfin.svg"/>
-</a>
-<br/>
-<a href="https://opencollective.com/jellyfin">
-<img alt="Donate" src="https://img.shields.io/opencollective/all/jellyfin.svg?label=backers"/>
-</a>
-<a href="https://features.jellyfin.org">
-<img alt="Submit Feature Requests" src="https://img.shields.io/badge/fider-vote%20on%20features-success.svg"/>
-</a>
-<a href="https://matrix.to/#/#jellyfinorg:matrix.org">
-<img alt="Chat on Matrix" src="https://img.shields.io/matrix/jellyfin:matrix.org.svg?logo=matrix"/>
-</a>
-<a href="https://forum.jellyfin.org">
-<img alt="Join our Forum" src="https://img.shields.io/badge/Forum-forum.jellyfin.org-blue"/>
-</a>
-<a href="https://github.com/jellyfin/jellyfin/releases.atom">
-<img alt="Release RSS Feed" src="https://img.shields.io/badge/rss-releases-ffa500?logo=rss" />
-</a>
-<a href="https://github.com/jellyfin/jellyfin/commits/master.atom">
-<img alt="Master Commits RSS Feed" src="https://img.shields.io/badge/rss-commits-ffa500?logo=rss" />
-</a>
-</p>
-
----
-
-Jellyfin is the Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps.
-
-This repository contains operating system and Docker packaging for Jellyfin, for use by manual builders and our release CI system with GitHub workflows. All packaging has henceforth been removed from the main code repositories for the [Jellyfin Server](https://github.com/jellyfin/jellyfin) and [Primary WebUI](https://github.com/jellyfin/jellyfin-web) and moved here.
 
 ## Quickstart
 
